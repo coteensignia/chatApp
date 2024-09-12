@@ -31,7 +31,7 @@ export default {
       <div class="card-body">
         <h5 class="card-title">{{ user.name.first }} {{ user.name.last }}</h5>
 
-        <!-- Acá gestionaremos envio de mensaje -->
+        <!--  envio de mensaje -->
         <form @submit.prevent="enviarMensaje">
           <input v-model="color" type="color" />
           <textarea class="fixed-textarea" v-model="message"></textarea>
