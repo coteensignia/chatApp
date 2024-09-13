@@ -45,7 +45,7 @@ export default {
         class="col-4"
         v-if="Object.keys(userLeft).length > 0"
       />
-      <ChatBoard class="col-4" :messages="messages" />
+      <ChatBoard class="chat col-4" :messages="messages" />
       <UserCard
         :user="userRight"
         class="col-4"
@@ -57,10 +57,29 @@ export default {
 </template>
 <style scoped>
 .chat-app-container {
-  background-color: #f0f4f8; 
+  background-color: #f0f4f8;
   padding: 20px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin-top:50px;
+  max-width: 950px;
+}
 
+
+
+.chat{
+  background-color: white;
+  width: 300px;
+  overflow: auto;
+  max-height: 570px;
+  gap:30px;
+  margin-top: 40px;
+  border:solid 1px #71b2f3;
+  border-radius: 10px;
+  
 }
 
 .row {
