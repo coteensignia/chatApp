@@ -25,4 +25,10 @@ export default {
     </div>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+p{
+  max-width: 80%;
+  width: fit-content;
+  padding: 10px;
+}
+</style>

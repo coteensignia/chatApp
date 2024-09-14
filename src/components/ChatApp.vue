@@ -74,11 +74,12 @@ export default {
   background-color: white;
   width: 300px;
   overflow: auto;
-  max-height: 570px;
+  max-height: 80%;
   gap:30px;
   margin-top: 40px;
   border:solid 1px #71b2f3;
   border-radius: 10px;
+  
   
 }
 
@@ -86,5 +87,10 @@ export default {
   display: flex;
   justify-content: center;
 }
+ChatBoard{
+  max-width: 80%;
+  width:fit-content;
+}
+
 </style>
 
